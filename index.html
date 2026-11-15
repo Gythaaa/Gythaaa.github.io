@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gythaaa | CyberSecurity, Hacking Labs & Dev</title>
+  <meta name="description" content="Portafolio de Gythaaa: Proyectos de desarrollo, automatización, laboratorios de hacking ofensivo y ciberseguridad.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Background Glow & Grid -->
+  <div class="cyber-grid"></div>
+  <div class="glow-orb orb-1"></div>
+  <div class="glow-orb orb-2"></div>
+
+  <!-- Header / Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="brand-logo">
+        <span class="prompt-symbol">&gt;</span> gythaaa<span class="cursor-blink">_</span>
+      </a>
+      <div class="nav-links">
+        <a href="#about"><i class="fa-solid fa-user-astronaut"></i> Sobre Mí</a>
+        <a href="#current-work"><i class="fa-solid fa-spinner"></i> En Progreso</a>
+        <a href="#hacking-labs"><i class="fa-solid fa-shield-halved"></i> Labs</a>
+        <a href="#dev-projects"><i class="fa-solid fa-code"></i> Proyectos</a>
+        <a href="#donate" class="nav-donate-btn"><i class="fa-solid fa-heart"></i> Donar</a>
+      </div>
+      <div class="mobile-menu-btn" id="mobile-menu-btn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+  <main class="main-content">
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="hero-content">
+        <div class="status-badge">
+          <span class="status-dot"></span>
+          <span>Disponible para nuevos desafíos & auditorías</span>
+        </div>
+        <h1 class="hero-title">
+          Hola, soy <span class="highlight-text">Gythaaa</span>
+        </h1>
+        <p class="hero-subtitle">
+          Entusiasta de la <span class="accent-word">Ciberseguridad Ofensiva</span>, investigación de vulnerabilidades y desarrollo de herramientas de automatización.
+        </p>
+
+        <!-- Interactive Terminal Simulator -->
+        <div class="terminal-card">
+          <div class="terminal-header">
+            <div class="terminal-dots">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <div class="terminal-title">guest@gythaaa-security:~</div>
+          </div>
+          <div class="terminal-body" id="terminal-body">
+            <p><span class="term-user">gythaaa@kali</span>:<span class="term-path">~</span>$ whoami</p>
+            <p class="term-output">&gt; Mauricio (Gythaaa) - Red Teamer / Security Researcher &amp; Dev</p>
+            <p><span class="term-user">gythaaa@kali</span>:<span class="term-path">~</span>$ cat skills.txt</p>
+            <p class="term-output">&gt; Web App Pentesting | Active Directory | Network Recon | Python/Bash Tools</p>
+            <p><span class="term-user">gythaaa@kali</span>:<span class="term-path">~</span>$ status</p>
+            <p class="term-output highlight-term">&gt; [+] Resolviendo máquinas y construyendo utilidades open source</p>
+          </div>
+        </div>
+
+        <div class="hero-actions">
+          <a href="#hacking-labs" class="btn btn-primary"><i class="fa-solid fa-terminal"></i> Ver Laboratorios</a>
+          <a href="#dev-projects" class="btn btn-secondary"><i class="fa-solid fa-laptop-code"></i> Proyectos de Código</a>
+          <a href="#donate" class="btn btn-donate"><i class="fa-solid fa-mug-hot"></i> Invítame un café</a>
+        </div>
+
+        <!-- Social Media Floating Bar -->
+        <div class="social-bar">
+          <a href="https://github.com/Gythaaa" target="_blank" rel="noopener noreferrer" title="GitHub" class="social-icon">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://linkedin.com/in/" target="_blank" rel="noopener noreferrer" title="LinkedIn" class="social-icon">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="https://x.com/" target="_blank" rel="noopener noreferrer" title="X (Twitter)" class="social-icon">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+          <a href="https://discord.com/" target="_blank" rel="noopener noreferrer" title="Discord" class="social-icon">
+            <i class="fa-brands fa-discord"></i>
+          </a>
+          <a href="https://app.hackthebox.com/" target="_blank" rel="noopener noreferrer" title="HackTheBox" class="social-icon">
+            <i class="fa-solid fa-cube"></i>
+          </a>
+          <a href="https://tryhackme.com/" target="_blank" rel="noopener noreferrer" title="TryHackMe" class="social-icon">
+            <i class="fa-solid fa-fire"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Currently Working On / En qué estoy trabajando -->
+    <section id="current-work" class="section-container">
+      <div class="section-header">
+        <div class="section-tag"><i class="fa-solid fa-clock-rotate-left"></i> Current Focus</div>
+        <h2>En qué estoy trabajando</h2>
+        <p class="section-desc">Mis focos actuales, investigaciones activas y metas a corto plazo.</p>
+      </div>
+
+      <div class="current-grid">
+        <div class="work-card">
+          <div class="work-status-badge in-progress">
+            <i class="fa-solid fa-circle-notch fa-spin"></i> En Desarrollo Activo
+          </div>
+          <h3><i class="fa-solid fa-network-wired"></i> Nmap-Automator v2</h3>
+          <p>Evolución de mi script de automatización de reconocimiento de red. Integración de banners dinámicos, enumeración de scripts NSE automatizada y exportación de reportes limpios en Markdown.</p>
+          <div class="progress-bar-container">
+            <div class="progress-bar" style="width: 75%;"></div>
+          </div>
+          <div class="work-footer">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Nmap</span>
+            <span class="tech-tag">Bash</span>
+            <span class="work-date">75% Completado</span>
+          </div>
+        </div>
+
+        <div class="work-card">
+          <div class="work-status-badge research">
+            <i class="fa-solid fa-crosshairs"></i> Laboratorios & Certificación
+          </div>
+          <h3><i class="fa-solid fa-shield-virus"></i> Active Directory & PrivEsc Labs</h3>
+          <p>Práctica intensiva en entornos simulados de Active Directory (Kerberoasting, AS-REP Roasting, DCSync, BloodHound) y explotación web avanzada en PortSwigger Web Security Academy.</p>
+          <div class="progress-bar-container">
+            <div class="progress-bar" style="width: 60%;"></div>
+          </div>
+          <div class="work-footer">
+            <span class="tech-tag">AD</span>
+            <span class="tech-tag">Kerberos</span>
+            <span class="tech-tag">HTB</span>
+            <span class="work-date">60% Completado</span>
+          </div>
+        </div>
+
+        <div class="work-card">
+          <div class="work-status-badge in-progress">
+            <i class="fa-solid fa-microchip"></i> Automatización & IoT
+          </div>
+          <h3><i class="fa-solid fa-robot"></i> Tuya & Home Automation Dashboard</h3>
+          <p>Control centralizado de dispositivos inteligentes, monitor de consumo de red y scripts locales para evitar telemetría externa innecesaria.</p>
+          <div class="progress-bar-container">
+            <div class="progress-bar" style="width: 85%;"></div>
+          </div>
+          <div class="work-footer">
+            <span class="tech-tag">API REST</span>
+            <span class="tech-tag">NodeJS</span>
+            <span class="tech-tag">IoT</span>
+            <span class="work-date">85% Completado</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hacking Labs & Writeups -->
+    <section id="hacking-labs" class="section-container">
+      <div class="section-header">
+        <div class="section-tag"><i class="fa-solid fa-bug"></i> OffSec & Labs</div>
+        <h2>Laboratorios de Hacking</h2>
+        <p class="section-desc">Máquinas vulnerables superadas, desafíos de CTF y writeups técnicos detallados.</p>
+      </div>
+
+      <div class="filter-controls">
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="htb">Hack The Box</button>
+        <button class="filter-btn" data-filter="thm">TryHackMe</button>
+        <button class="filter-btn" data-filter="web">Web Security</button>
+        <button class="filter-btn" data-filter="ad">Active Directory</button>
+      </div>
+
+      <div class="labs-grid">
+        <!-- Lab 1 -->
+        <article class="lab-card" data-category="htb ad">
+          <div class="lab-header">
+            <span class="platform-badge htb"><i class="fa-solid fa-cube"></i> HackTheBox</span>
+            <span class="difficulty-badge medium">Medium</span>
+          </div>
+          <h3 class="lab-title">Forest / Active Directory</h3>
+          <p class="lab-desc">Explotación de Active Directory: AS-REP Roasting sin preautenticación, enumeración con BloodHound y escalada de privilegios abusando de permisos WriteDacl hacia Domain Admin.</p>
+          <div class="tag-list">
+            <span class="tag">Windows</span>
+            <span class="tag">Kerberos</span>
+            <span class="tag">BloodHound</span>
+            <span class="tag">DCSync</span>
+          </div>
+          <div class="lab-actions">
+            <button class="btn-sm" onclick="openLabModal('Forest', 'HackTheBox', 'Medium', 'Explotación de AS-REP Roasting y abuso de permisos WriteDacl en un dominio Windows Server para obtener credenciales de Administrador.')">
+              <i class="fa-solid fa-file-lines"></i> Ver Notas
+            </button>
+          </div>
+        </article>
+
+        <!-- Lab 2 -->
+        <article class="lab-card" data-category="web thm">
+          <div class="lab-header">
+            <span class="platform-badge thm"><i class="fa-solid fa-fire"></i> TryHackMe</span>
+            <span class="difficulty-badge easy">Easy</span>
+          </div>
+          <h3 class="lab-title">RootMe / Web Exploitation</h3>
+          <p class="lab-desc">Bypass de filtro en subida de archivos (File Upload Bypass con extensión alternativa .phtml), ejecución remota de comandos (RCE) y escalada mediante binario SUID mal configurado (Python SUID).</p>
+          <div class="tag-list">
+            <span class="tag">Linux</span>
+            <span class="tag">File Upload</span>
+            <span class="tag">RCE</span>
+            <span class="tag">SUID</span>
+          </div>
+          <div class="lab-actions">
+            <button class="btn-sm" onclick="openLabModal('RootMe', 'TryHackMe', 'Easy', 'Bypass de validación de extensión MIME para subir una reverse shell y explotación de capabilities/SUID en Python.')">
+              <i class="fa-solid fa-file-lines"></i> Ver Notas
+            </button>
+          </div>
+        </article>
+
+        <!-- Lab 3 -->
+        <article class="lab-card" data-category="htb web">
+          <div class="lab-header">
+            <span class="platform-badge htb"><i class="fa-solid fa-cube"></i> HackTheBox</span>
+            <span class="difficulty-badge hard">Hard</span>
+          </div>
+          <h3 class="lab-title">Precious / Ruby Deserialization</h3>
+          <p class="lab-desc">Análisis de servicio conversor de PDF vulnerable a CVE-2022-25765 (pdfkit command injection), obtención de user shell y escalada a root abusando de deserialización YAML insegura en script Ruby.</p>
+          <div class="tag-list">
+            <span class="tag">Linux</span>
+            <span class="tag">Ruby</span>
+            <span class="tag">YAML Deserialization</span>
+            <span class="tag">CVE-2022-25765</span>
+          </div>
+          <div class="lab-actions">
+            <button class="btn-sm" onclick="openLabModal('Precious', 'HackTheBox', 'Hard', 'Inyección de comandos vía parámetros en pdfkit y creación de gadget chain YAML en Ruby para escalar privilegios.')">
+              <i class="fa-solid fa-file-lines"></i> Ver Notas
+            </button>
+          </div>
+        </article>
+
+        <!-- Lab 4 -->
+        <article class="lab-card" data-category="web">
+          <div class="lab-header">
+            <span class="platform-badge portswigger"><i class="fa-solid fa-shield-halved"></i> Web Security</span>
+            <span class="difficulty-badge medium">Medium</span>
+          </div>
+          <h3 class="lab-title">SQL Injection &amp; Auth Bypass</h3>
+          <p class="lab-desc">Inyección SQL ciega basada en tiempo (Time-Based Blind SQLi) y extracción de tablas de hashes, bypass de controles de autenticación multifactor y manipulación de parámetros IDOR.</p>
+          <div class="tag-list">
+            <span class="tag">SQLi</span>
+            <span class="tag">Auth Bypass</span>
+            <span class="tag">IDOR</span>
+            <span class="tag">Burp Suite</span>
+          </div>
+          <div class="lab-actions">
+            <button class="btn-sm" onclick="openLabModal('Web Security Academy', 'PortSwigger', 'Practitioner', 'Extracción automatizada de caracteres vía condicionales en bases de datos PostgreSQL y mitigación con Prepared Statements.')">
+              <i class="fa-solid fa-file-lines"></i> Ver Notas
+            </button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Code & Automation Projects -->
+    <section id="dev-projects" class="section-container">
+      <div class="section-header">
+        <div class="section-tag"><i class="fa-solid fa-code-branch"></i> Open Source &amp; Dev</div>
+        <h2>Proyectos de Código</h2>
+        <p class="section-desc">Herramientas que he desarrollado en GitHub: automatización, scraping y utilidades.</p>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1: Nmap-Automator -->
+        <div class="project-card">
+          <div class="project-top">
+            <i class="fa-solid fa-folder-open folder-icon"></i>
+            <div class="project-links">
+              <a href="https://github.com/Gythaaa/Nmap-Automator" target="_blank" rel="noopener noreferrer" title="Ver en GitHub">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">
+            <a href="https://github.com/Gythaaa/Nmap-Automator" target="_blank" rel="noopener noreferrer">Nmap-Automator</a>
+          </h3>
+          <p class="project-desc">
+            Script interactivo diseñado para acelerar la fase de reconocimiento en pentesting. Realiza escaneos rápidos de puertos abiertos, lanza scripts NSE específicos según el servicio detectado y organiza la salida por objetivos.
+          </p>
+          <div class="project-tags">
+            <span>Python</span>
+            <span>Nmap</span>
+            <span>Pentesting</span>
+            <span>CLI</span>
+          </div>
+        </div>
+
+        <!-- Project 2: superzoo-scraper -->
+        <div class="project-card">
+          <div class="project-top">
+            <i class="fa-solid fa-folder-open folder-icon"></i>
+            <div class="project-links">
+              <a href="https://github.com/Gythaaa/superzoo-scraper" target="_blank" rel="noopener noreferrer" title="Ver en GitHub">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">
+            <a href="https://github.com/Gythaaa/superzoo-scraper" target="_blank" rel="noopener noreferrer">superzoo-scraper</a>
+          </h3>
+          <p class="project-desc">
+            Web scraper automatizado para extraer catálogos, monitorear cambios de precios y stock. Implementa manejo de peticiones asíncronas, rotación de cabeceras y persistencia de datos en formatos listos para análisis.
+          </p>
+          <div class="project-tags">
+            <span>Python</span>
+            <span>BeautifulSoup</span>
+            <span>Scraping</span>
+            <span>Data</span>
+          </div>
+        </div>
+
+        <!-- Project 3: tuya-panel -->
+        <div class="project-card">
+          <div class="project-top">
+            <i class="fa-solid fa-folder-open folder-icon"></i>
+            <div class="project-links">
+              <a href="https://github.com/Gythaaa/tuya-panel" target="_blank" rel="noopener noreferrer" title="Ver en GitHub">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">
+            <a href="https://github.com/Gythaaa/tuya-panel" target="_blank" rel="noopener noreferrer">tuya-panel</a>
+          </h3>
+          <p class="project-desc">
+            Dashboard e interfaz de integración para controlar dispositivos inteligentes del ecosistema Tuya / SmartLife de forma local y vía API REST, con logs de actividad y temporizadores automatizados.
+          </p>
+          <div class="project-tags">
+            <span>JavaScript</span>
+            <span>IoT</span>
+            <span>Tuya API</span>
+            <span>Web UI</span>
+          </div>
+        </div>
+
+        <!-- Project 4: clan-loot-roller -->
+        <div class="project-card">
+          <div class="project-top">
+            <i class="fa-solid fa-folder-open folder-icon"></i>
+            <div class="project-links">
+              <a href="https://github.com/Gythaaa/clan-loot-roller" target="_blank" rel="noopener noreferrer" title="Ver en GitHub">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">
+            <a href="https://github.com/Gythaaa/clan-loot-roller" target="_blank" rel="noopener noreferrer">clan-loot-roller</a>
+          </h3>
+          <p class="project-desc">
+            Herramienta web interactiva para sorteos transparentes y distribución de recompensas en comunidades de videojuegos, con generador de números pseudoaleatorios y auditoría de tiradas.
+          </p>
+          <div class="project-tags">
+            <span>JavaScript</span>
+            <span>HTML5</span>
+            <span>Gaming Tools</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Donations & Support Section -->
+    <section id="donate" class="section-container donate-section">
+      <div class="donate-card">
+        <div class="donate-icon">
+          <i class="fa-solid fa-hand-holding-heart"></i>
+        </div>
+        <h2>¿Te gusta mi trabajo o te sirvió algún lab?</h2>
+        <p class="donate-desc">
+          Toda contribución ayuda directamente a mantener los laboratorios activos, adquirir suscripciones de práctica (HackTheBox VIP, Pro Labs) y seguir desarrollando herramientas open-source gratuitas para la comunidad.
+        </p>
+
+        <div class="donate-options">
+          <!-- Buy Me a Coffee / Ko-fi -->
+          <a href="https://ko-fi.com/gythaaa" target="_blank" rel="noopener noreferrer" class="donate-pill kofi">
+            <i class="fa-solid fa-mug-hot"></i>
+            <span>Ko-fi / Invítame un Café</span>
+          </a>
+
+          <!-- PayPal -->
+          <a href="https://paypal.me/gythaaa" target="_blank" rel="noopener noreferrer" class="donate-pill paypal">
+            <i class="fa-brands fa-paypal"></i>
+            <span>Donar vía PayPal</span>
+          </a>
+
+          <!-- Crypto Modal Trigger -->
+          <button class="donate-pill crypto" onclick="openCryptoModal()">
+            <i class="fa-brands fa-bitcoin"></i>
+            <span>Criptomonedas (BTC / USDT)</span>
+          </button>
+        </div>
+
+        <p class="donate-small-text">
+          <i class="fa-solid fa-shield-cat"></i> ¡Muchas gracias por el apoyo a los proyectos!
+        </p>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-container">
+      <div class="section-header">
+        <div class="section-tag"><i class="fa-solid fa-terminal"></i> About Me</div>
+        <h2>Sobre Mí</h2>
+      </div>
+
+      <div class="about-card">
+        <div class="about-text">
+          <p>
+            ¡Hola! Soy <strong>Mauricio (Gythaaa)</strong>. Me apasiona descomponer sistemas, entender cómo funcionan bajo el capó y construir soluciones que automaticen tareas repetitivas o detecten vulnerabilidades antes que los atacantes.
+          </p>
+          <p>
+            Paso mi tiempo libre resolviendo desafíos en <strong>Hack The Box</strong> y <strong>TryHackMe</strong>, investigando seguridad en aplicaciones web, y creando scripts para agilizar flujos de trabajo en Python y Bash.
+          </p>
+          <div class="skills-chips">
+            <span class="skill-chip"><i class="fa-brands fa-linux"></i> Linux / Kali</span>
+            <span class="skill-chip"><i class="fa-solid fa-network-wired"></i> Redes &amp; TCP/IP</span>
+            <span class="skill-chip"><i class="fa-brands fa-python"></i> Python</span>
+            <span class="skill-chip"><i class="fa-solid fa-terminal"></i> Bash Scripting</span>
+            <span class="skill-chip"><i class="fa-solid fa-shield-halved"></i> Web Pentesting</span>
+            <span class="skill-chip"><i class="fa-brands fa-git-alt"></i> Git &amp; CI/CD</span>
+            <span class="skill-chip"><i class="fa-solid fa-magnifying-glass"></i> OSINT</span>
+            <span class="skill-chip"><i class="fa-solid fa-cube"></i> Active Directory</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Lab Details Modal -->
+  <div class="modal-overlay" id="lab-modal">
+    <div class="modal-window">
+      <div class="modal-header">
+        <h3 id="modal-lab-title">Detalles del Laboratorio</h3>
+        <button class="modal-close-btn" onclick="closeLabModal()">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-badges">
+          <span id="modal-lab-platform" class="platform-badge"></span>
+          <span id="modal-lab-difficulty" class="difficulty-badge"></span>
+        </div>
+        <p id="modal-lab-desc" class="modal-paragraph"></p>
+        <div class="modal-terminal">
+          <span class="term-dim"># Ataque resumido / Vector de compromiso</span>
+          <p class="term-green">&gt; Enumeración de servicios -&gt; Explotación de vector inicial -&gt; Post-Explotación &amp; Escalada.</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" onclick="closeLabModal()">Cerrar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Crypto Donation Modal -->
+  <div class="modal-overlay" id="crypto-modal">
+    <div class="modal-window">
+      <div class="modal-header">
+        <h3><i class="fa-brands fa-bitcoin"></i> Donaciones Crypto</h3>
+        <button class="modal-close-btn" onclick="closeCryptoModal()">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p class="modal-paragraph">Puedes apoyar enviando a cualquiera de estas billeteras:</p>
+        
+        <div class="crypto-wallet-item">
+          <div class="crypto-meta">
+            <strong>Bitcoin (BTC):</strong>
+            <span class="wallet-network">Red Bitcoin</span>
+          </div>
+          <div class="wallet-box">
+            <input type="text" readonly value="bc1qxy2kgdygjrsqtzq2n0yrf2493p83kkfjhx0wlh" id="btc-address">
+            <button class="btn-copy" onclick="copyWallet('btc-address', this)">
+              <i class="fa-regular fa-copy"></i> Copiar
+            </button>
+          </div>
+        </div>
+
+        <div class="crypto-wallet-item">
+          <div class="crypto-meta">
+            <strong>USDT / ETH:</strong>
+            <span class="wallet-network">Red ERC-20 / TRC-20</span>
+          </div>
+          <div class="wallet-box">
+            <input type="text" readonly value="0x71C8360212F38eEBE424A9B3f12461877478Abf6" id="eth-address">
+            <button class="btn-copy" onclick="copyWallet('eth-address', this)">
+              <i class="fa-regular fa-copy"></i> Copiar
+            </button>
+          </div>
+        </div>
+        <p class="term-dim small-note">* Puedes personalizar estas direcciones con tus wallets reales en el archivo index.html</p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" onclick="closeCryptoModal()">Listo</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <p>&copy; <span id="current-year"></span> Gythaaa. Hecho con <i class="fa-solid fa-shield-heart"></i> para la comunidad de ciberseguridad.</p>
+      <div class="footer-links">
+        <a href="https://github.com/Gythaaa" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GitHub</a>
+        <a href="#hero"><i class="fa-solid fa-arrow-up"></i> Volver arriba</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
