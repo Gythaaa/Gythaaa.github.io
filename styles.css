@@ -887,14 +887,17 @@ body {
 }
 
 .donate-pill.twitch {
-  background: #9146ff;
-  color: #fff;
+  background: #9146ff !important;
+  color: #ffffff !important;
+  border-color: #9146ff !important;
+  box-shadow: 0 4px 15px rgba(145, 70, 255, 0.4);
 }
 
 .donate-pill.twitch:hover {
-  background: #772ce8;
+  background: #772ce8 !important;
+  color: #ffffff !important;
   transform: translateY(-2px);
-  box-shadow: 0 4px 15px rgba(145, 70, 255, 0.4);
+  box-shadow: 0 6px 20px rgba(145, 70, 255, 0.6);
 }
 
 .donate-pill.crypto {
@@ -935,6 +938,20 @@ body {
 
 .about-text strong {
   color: var(--text-primary);
+}
+
+.cv-action-wrapper {
+  margin: 1.2rem 0 1.5rem 0;
+}
+
+.btn-cv {
+  padding: 0.65rem 1.4rem;
+  font-size: 0.9rem;
+  border-radius: var(--radius-sm);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 4px 15px rgba(0, 255, 157, 0.2);
 }
 
 .skills-chips {
